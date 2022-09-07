@@ -1,0 +1,27 @@
+{
+    "Tag": {
+        "subject": {
+            "cate": "div",
+            "class": "info"
+        },
+        "info": {
+            "cate": "div",
+            "class": "pub"
+        },
+        "rate": {
+            "cate": "div",
+            "class": "star clearfix",
+            "stars": {
+                "cate": "span",
+                "class": "rating_nums"
+            },
+            "public": {
+                "cate": "span",
+                "class": "pl"
+            }
+        }
+    },
+    "ID": {
+        "subject": {}
+    }
+}

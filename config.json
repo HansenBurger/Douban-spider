@@ -1,0 +1,15 @@
+{
+    "drivers": {
+        "chrome": {
+            "win_104": "drivers\\chrome_win_104.exe",
+            "win_105": "drivers\\chrome_win_104.exe"
+        }
+    },
+    "cookies": {
+        "local": "Source\\cookies.txt",
+        "tmp": "Source\\cookies_tmp.txt"
+    },
+    "header": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36"
+    }
+}
