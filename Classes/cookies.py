@@ -1,4 +1,4 @@
-from lib2to3.pgen2 import driver
+from cgitb import html
 import numpy as np
 from pathlib import Path
 import json, time, sys
@@ -16,7 +16,6 @@ from DecryptLogin.modules.utils.cookies import saveSessionCookies
 sys.path.append(str(Path.cwd() / 'Classes'))
 
 from tools import ConfigRead
-from slider_catch import do_crack
 
 
 
@@ -57,6 +56,7 @@ class CookiesDouban(Basic):
         curframe = self.__driver.find_element('tag name','iframe')
         self.__driver.switch_to.frame(curframe)
         self.__Sleep()
+
         self.__driver.find_element('class name', 'account-tab-account').click()
         self.__driver.find_element('id', 'username').clear()
         self.__driver.find_element('id', 'username').send_keys(self.__uid)
@@ -65,7 +65,14 @@ class CookiesDouban(Basic):
         self.__driver.find_element('xpath', '/html/body/div[1]/div[2]/div[1]/div[5]/a').click()
         self.__Sleep()
 
-        element = self.__driver.find_element('xpath', '')
+        authframe = self.__driver.find_element('tag name', 'iframe')
+        self.__driver.switch_to.frame(authframe)
+        html_ = self.__driver.page_source
+        with open('slide.html', 'w') as f:
+            f.write(html_)
+        block = self.__driver.find_element('tag name','img')
+        reload = self.__driver.find_element('xpath','//*[@id="reload"]')
+        a = 1
         
         self.__driver.get(self.__url)
         cookies = self.__driver.get_cookies()
