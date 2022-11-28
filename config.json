@@ -2,7 +2,9 @@
     "drivers": {
         "chrome": {
             "win_104": "drivers\\chrome_win_104.exe",
-            "win_105": "drivers\\chrome_win_104.exe"
+            "win_105": "drivers\\chrome_win_105.exe",
+            "win_106": "drivers\\chrome_win_106.exe",
+            "win_107": "drivers\\chrome_win_107.exe"
         }
     },
     "cookies": {
