@@ -18,7 +18,7 @@ home_url = r"https://www.dlsite.com"
 src_url = r"/maniax/work/=/product_id/"
 locales = ["ja_JP", "en_US", "zh_CN"]
 
-driver_p = ConfigRead("drivers", "chrome")["win_106"]
+driver_p = ConfigRead("drivers", "chrome")["win_108"]
 option_d = Options()
 option_d.add_argument("-disable-gpu")
 option_d.add_argument("--silent")
